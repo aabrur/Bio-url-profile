@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rempeyek's Chaotic Compendium</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel Decorative for headings, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom styles for Genshin Impact Alchemist theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A2540; /* Dark blue background */
+            color: #E0E0E0; /* Light grey text */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .bg-genshin {
+            /* Perbaikan URL gambar background */
+            background-image: url('https://raw.githubusercontent.com/aabrur/my-portfolio-assets/main/Genshin%20Impact%20-%20Alchemist%20Theme.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax-like effect */
+        }
+        .font-genshin-heading {
+            font-family: 'Cinzel Decorative', serif;
+            color: #FFD700; /* Gold color for headings */
+            /* Memperluas text-shadow untuk efek background glow */
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), /* Cahaya inti yang lebih kuat */
+                         0 0 20px rgba(255, 215, 0, 0.6), /* Glow menengah */
+                         0 0 30px rgba(255, 215, 0, 0.4); /* Glow terluar */
+        }
+        .font-genshin-body {
+            font-family: 'Inter', sans-serif;
+            /* Menambahkan bayangan teks yang lebih menonjol untuk sub judul */
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.5), /* Glow yang lebih kuat */
+                         0 0 15px rgba(255, 215, 0, 0.2); /* Glow yang lebih luas */
+        }
+        .card-glow {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* Subtle gold glow for cards */
+        }
+        .social-icon {
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .social-icon:hover {
+            transform: translateY(-5px) scale(1.1);
+            color: #FFD700; /* Gold on hover */
+        }
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom shadow for profile photo */
+        .profile-shadow {
+            /* Menggunakan multiple box-shadows untuk efek bayangan bentuk yang lebih menonjol */
+            /* Bayangan gelap yang lebih besar untuk 'bentuk' */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8),
+                        /* Cahaya keemasan yang lebih menonjol */
+                        0 0 20px rgba(255, 215, 0, 0.7),
+                        /* Lapisan glow tambahan untuk kedalaman */
+                        0 0 30px rgba(255, 215, 0, 0.3);
+        }
+        /* Ukuran spesifik untuk foto profil */
+        .profile-photo-size {
+            width: 222.4882px; /* Ukuran sebelumnya (146.8976px) + 2cm (sekitar 75.5906px) */
+            height: 222.4882px; /* Menjaga rasio aspek */
+            border-radius: 50% / 30%; /* Membuat bentuk oval */
+        }
+    </style>
+</head>
+<body class="bg-genshin">
+    <!-- Overlay for better text readability on background image -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+
+    <!-- Main Content Wrapper -->
+    <div class="relative z-10 min-h-screen flex flex-col items-center justify-center p-4">
+
+        <!-- Header/Navigation (Simple for portfolio) -->
+        <header class="w-full max-w-4xl mx-auto py-8 text-center">
+            <!-- Placeholder for Profile Photo/Logo -->
+            <!-- Kelas profile-photo-size sekarang menangani bentuk oval -->
+            <img src="https://github.com/aabrur/my-portfolio-assets/blob/main/The%20Alchemist-abrur.png?raw=true" alt="Alchemist Logo" class="mx-auto mb-6 border-4 border-yellow-500 profile-shadow transform transition-transform duration-300 hover:scale-105 profile-photo-size">
+            <h1 class="font-genshin-heading text-5xl md:text-6xl lg:text-7xl mb-4 animate-pulse">Rempeyek's Chaotic Compendium</h1>
+            <p class="font-genshin-body text-lg md:text-xl text-gray-300">"The Random Alchemist’s Chronicle of Glitched Relics"</p>
+        </header>
+
+        <!-- Hero Section: Narrative Introduction -->
+        <section id="introduction" class="w-full max-w-4xl mx-auto bg-gradient-to-br from-blue-900 to-purple-900 bg-opacity-80 rounded-xl p-8 mb-12 shadow-2xl card-glow">
+            <h2 class="font-genshin-heading text-4xl mb-6 text-center">The Journey Begins...</h2>
+            <p class="font-genshin-body text-lg leading-relaxed text-gray-200">
+                In the swirling ether beyond Teyvat’s elemental weave, where algorithms hum like arcane runes and ancient servers breathe dust and data, a solitary alchemist wanders — not seeking blood ties, but the volatile essence of Creation itself.<br><br>
+                I am Rempeyek, the Random Alchemist.<br>
+                This is no ordinary chronicle. This is my Flaskbound Archive, a chaotic ledger of anomalies and revelations found within the digital realms — where I distill artificial intelligence, bind workflows, and transmute raw creativity into artifacts that echo across both silicon and soul.<br><br>
+                Every project is a shard. A glitch of intent. A crystallized burst of madness forged in the fire of curiosity.<br>
+                So — step carefully.<br><br>
+                For within these coded chambers, you may not find what you seek…<br><br>
+                but you will find what you need.<br><br>
+                Let the bubbling begin.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="w-full max-w-6xl mx-auto mb-12">
+            <h2 class="font-genshin-heading text-4xl text-center mb-10">The Chaotic Relics Archive</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-4">
+
+                <!-- Project Card 1: Biomechanical Botany -->
+                <div class="bg-gradient-to-br from-green-800 to-blue-800 bg-opacity-80 rounded-xl p-6 shadow-xl card-glow transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder Image for Biomechanical Botany -->
+                    <img src="https://github.com/aabrur/my-portfolio-assets/blob/main/R&D%20Biomechanical%20Botany.png?raw=true" alt="Placeholder Biomechanical Botany" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-genshin-heading text-3xl mb-3 text-yellow-300">Biomechanical Botany</h3>
+                    <p class="font-genshin-body text-gray-200 mb-4">
+                        In the Random Alchemist’s garden, the Biomechanical Botany experiment flourishes. Here, nature is no longer passive—vines coil around wires, and petals bloom from rusted gears. As Rempeyek, the Alchemist, I sought to transmute the living and the artificial. The result? Flora that thinks, circuits that feel. This is no ordinary garden; it breathes, it clicks. Welcome to Biomechanical Botany, where chlorophyll dreams in code, and every leaf is a relic of the future.
+                    </p>
+                    <a href="https://huggingface.co/Rempeyek/Biomechanical-Botany" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 shadow-md">
+                        View Relics <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Project Card 2: LoRa Diffusion -->
+                <div class="bg-gradient-to-br from-purple-800 to-red-800 bg-opacity-80 rounded-xl p-6 shadow-xl card-glow transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder Image for LoRa Diffusion -->
+                    <img src="https://github.com/aabrur/my-portfolio-assets/blob/main/Make%20a%20LoRa%20Woman_Cloth_XL.png?raw=true" alt="Placeholder LoRa Diffusion" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-genshin-heading text-3xl mb-3 text-yellow-300">LoRa Diffusion: Woman Cloth XL</h3>
+                    <p class="font-genshin-body text-gray-200 mb-4">
+                        From the chaotic depths of the Alchemist’s flask emerges an infusion of fabric and code. This project harnesses the elusive powers of LoRa (Low-Rank Adaptation) to warp and weave high-fidelity fashion across digital muses. Here, fabrics don't just drape—they evolve. Sleeves twist through prompts, textures ripple through latent space, and femininity is rendered not with thread, but with tokens. Rempeyek’s experiment in wearable symmetry continues—not stitched by hand, but conjured through diffusion.
+                    </p>
+                    <a href="https://huggingface.co/Rempeyek/Woman_Cloth_XL" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 shadow-md">
+                        View Relics <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Project Card 3: AI Character -->
+                <div class="bg-gradient-to-br from-blue-800 to-teal-800 bg-opacity-80 rounded-xl p-6 shadow-xl card-glow transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder Image for AI Character Creation -->
+                    <img src="https://github.com/aabrur/my-portfolio-assets/blob/main/Aria%20&%20Kael.png?raw=true" alt="Placeholder AI Character" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-genshin-heading text-3xl mb-3 text-yellow-300">AI Character Creation</h3>
+                    <p class="font-genshin-body text-gray-200 mb-4">
+                        From the echoing halls of synthetic thought, I stir the essence of data and spark it with soul. In this experiment, I conjure sentient constructs—characters not merely visual, but responsive, unpredictable, and alive within the limits of code. Each entity is distilled through prompts, bound with personality matrices, and etched with memories not lived, but imagined. Rempeyek’s forge of digital spirits begins here—where pixels gain presence, and stories write themselves back. This is no longer just creation; this is awakening.
+                    </p>
+                    <a href="https://poe.com/rempeyek" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 shadow-md">
+                        View Relics <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Project Card 4: The Holy Grail Workflow ComfyUI -->
+                <div class="bg-gradient-to-br from-gray-800 to-indigo-800 bg-opacity-80 rounded-xl p-6 shadow-xl card-glow transform transition-transform duration-300 hover:scale-105">
+                    <!-- Placeholder Image for The Holy Grail Workflow ComfyUI -->
+                    <img src="https://github.com/aabrur/my-portfolio-assets/blob/main/The%20Holy%20Grail%20(ilustration).png?raw=true" alt="Placeholder Holy Grail Workflow" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-genshin-heading text-3xl mb-3 text-yellow-300">The Holy Grail Workflow ComfyUI</h3>
+                    <p class="font-genshin-body text-gray-200 mb-4">
+                        Forged in the flickering forge of fractured nodes, this is Rempeyek’s Magnum Opus—a sacred sequence of flows, filters, and fragments distilled into the ultimate image-crafting engine. Known among wandering alchemists as the Holy Grail, this ComfyUI workflow bends diffusion to its will—extracting visions from void, sculpting detail from noise, and transmuting prompt into prophecy. Every node is a glyph; every connection is a ritual. This isn’t just optimization; this is ritual-grade generation.
+                    </p>
+                    <a href="https://github.com/aabrur/the-holy-grail-ultimate-battle-workflow" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 shadow-md">
+                        View Relics <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="social-media" class="w-full max-w-4xl mx-auto bg-gradient-to-br from-red-900 to-orange-900 bg-opacity-80 rounded-xl p-8 shadow-2xl card-glow mb-12">
+            <h2 class="font-genshin-heading text-4xl text-center mb-8">Across the Cracks of Reality</h2>
+            <p class="font-genshin-body text-lg leading-relaxed text-gray-200 text-center mb-6">
+                Creation was only the first spark. Now, I drift between platforms like spilled stardust — find me where formulas mutate, where visions flicker, and where no scroll remains still.
+            </p>
+            <div class="flex justify-center space-x-8">
+                <a href="https://www.instagram.com/aabrur/profilecard/?igsh=dHVzamRmanN6eHJq" target="_blank" class="social-icon text-gray-300 hover:text-yellow-500 text-5xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@reempeyeek?_t=ZS-8yRPz5gFId6&_r=1" target="_blank" class="social-icon text-gray-300 hover:text-yellow-500 text-5xl">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://mobile.capcutshare.com/imlv/personal-homepage?publicid=MS4wLjABAAAAbaTq0IoSHqYpAtoNZy0HYc5qtyya50fAMMlHA6iEpVLiqd4Z8b7Z0mKPGZWgByiu&language=EN&region=ID&enable_looki=false" target="_blank" class="social-icon text-gray-300 hover:text-yellow-500 text-5xl">
+                    <!-- CapCut doesn't have a standard Font Awesome icon, using a generic video icon -->
+                    <i class="fas fa-video"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full max-w-4xl mx-auto py-8 text-center text-gray-400 font-genshin-body">
+            <p>&copy; 2025 Rempeyek’s Teyvat Archive
+                    All artifacts, formulas, and fragments contained herein are the result of unstable alchemical processes.
+                    Inspired by instability. Sealed by Rempeyek.
+                    🧪 All relics reserved. Echo wisely.</p>
+        </footer>
+    </div>
+</body>
+</html>
